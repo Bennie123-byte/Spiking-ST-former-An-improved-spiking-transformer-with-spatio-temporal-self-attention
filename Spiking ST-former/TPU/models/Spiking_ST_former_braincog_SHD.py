@@ -79,7 +79,7 @@ class STSA(BaseModule):
         self.proj_bn = nn.BatchNorm1d(dim)
         self.proj_lif = MyNode(step=step, tau=2.0,)
 
-        self.TIM = TIM(TPU_Belta=TPU_Belta,in_channels=self.in_channels)
+        self.TPU = TPU(TPU_Belta=TPU_Belta,in_channels=self.in_channels)
         
     def forward(self, x):
 

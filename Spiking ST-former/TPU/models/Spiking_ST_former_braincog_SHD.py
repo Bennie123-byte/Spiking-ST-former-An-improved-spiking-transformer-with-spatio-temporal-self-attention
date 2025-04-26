@@ -11,7 +11,7 @@ from braincog.base.strategy.surrogate import *
 from functools import partial
 from torchvision import transforms
 from models.utils.MyNode import *
-from models.TIM import *
+from models.TPU import *
 __all__ = ['Spiking_ST_former_shd']
 
 class MLP(BaseModule):

@@ -104,8 +104,8 @@ class STSA(BaseModule):
         v_conv_out = self.v_lif(v_conv_out.flatten(0,1)).reshape(T, B, C ,N)
         v = v_conv_out.reshape(T, B, N, self.num_heads, C//self.num_heads).permute(0, 1, 3, 2, 4).contiguous()
 
-        #TIM on Q
-        q = self.TIM(q) 
+        #TPU on Q
+        q = self.TPU(q) 
 
         #SSA 
         attn = (q @ k.transpose(-2, -1)) 

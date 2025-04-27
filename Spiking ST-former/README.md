@@ -1,4 +1,4 @@
-
+##code for paper:Spiking ST-former:An improved spiking transformer with spatio-temporal self-attention
 
 ## Requirements
 timm==0.6.12; cupy==11.4.0; torch==1.12.1; spikingjelly==0.0.0.0.12; pyyaml; 
